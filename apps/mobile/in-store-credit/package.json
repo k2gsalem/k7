@@ -1,0 +1,30 @@
+{
+  "name": "in-store-credit",
+  "version": "0.0.1",
+  "private": true,
+  "main": "expo-entry.js",
+  "scripts": {
+    "start": "expo start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@aws-amplify/api": "^6.0.28",
+    "@aws-amplify/datastore": "^6.0.27",
+    "@k7/amplify-config": "*",
+    "@k7/shared-models": "*",
+    "aws-amplify": "^6.0.33",
+    "expo": "^50.0.10",
+    "react": "18.2.0",
+    "react-native": "0.73.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.21",
+    "react-test-renderer": "18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

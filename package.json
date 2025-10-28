@@ -1,0 +1,21 @@
+{
+  "name": "k7-platform",
+  "private": true,
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "apps/mobile/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.4"
+  }
+}

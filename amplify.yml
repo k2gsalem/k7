@@ -1,0 +1,34 @@
+version: 1
+applications:
+  - appRoot: apps/admin-dashboard
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - yarn install --frozen-lockfile
+        build:
+          commands:
+            - yarn turbo run build --filter=admin-dashboard
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**
+  - appRoot: apps/public-website
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - yarn install --frozen-lockfile
+        build:
+          commands:
+            - yarn turbo run build --filter=public-website
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**
