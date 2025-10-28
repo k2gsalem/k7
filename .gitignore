@@ -1,0 +1,12 @@
+node_modules
+.dist
+build
+.dist
+.DS_Store
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+.expo
+.expo-shared
+amplify/#current-cloud-backend
+amplify/.config/local-* 

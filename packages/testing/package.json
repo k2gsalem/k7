@@ -1,0 +1,10 @@
+{
+  "name": "@k7/testing",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'noop'",
+    "test": "echo 'noop'"
+  }
+}

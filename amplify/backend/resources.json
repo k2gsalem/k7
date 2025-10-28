@@ -1,0 +1,27 @@
+{
+  "modules": {
+    "admin": {
+      "auth": "cognito",
+      "analytics": "pinpoint",
+      "api": "appsync",
+      "storage": ["s3"],
+      "database": "dynamodb"
+    },
+    "ordering": {
+      "auth": "cognito",
+      "api": "apigateway",
+      "functions": ["orderWorkflow"],
+      "database": "dynamodb",
+      "realtime": "appsync"
+    },
+    "catalog": {
+      "api": "appsync",
+      "storage": ["s3"],
+      "database": "dynamodb"
+    },
+    "credit": {
+      "api": "apigateway",
+      "database": "aurora"
+    }
+  }
+}
