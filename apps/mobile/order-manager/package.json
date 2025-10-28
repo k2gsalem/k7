@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "@aws-amplify/api": "^6.0.28",
-    "@aws-amplify/datastore": "^6.0.27",
+    "@aws-amplify/datastore": "^5.1.0",
     "@k7/amplify-config": "*",
     "@k7/shared-models": "*",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
     "aws-amplify": "^6.0.33",
     "expo": "^50.0.10",
-    "expo-notifications": "^0.26.2",
+    "expo-notifications": "~0.27.6",
     "react": "18.2.0",
     "react-native": "0.73.6"
   },
