@@ -1,6 +1,4 @@
-import { defineConfig } from '@aws-amplify/backend';
-
-export const k7Backend = defineConfig({
+export const k7Backend = {
   name: 'k7-platform',
   authorizationModes: {
     defaultAuthorizationMode: 'userPool',
@@ -94,7 +92,7 @@ export const k7Backend = defineConfig({
       }
     }
   }
-});
+} as const;
 
 export const amplifyExports = {
   Auth: {
